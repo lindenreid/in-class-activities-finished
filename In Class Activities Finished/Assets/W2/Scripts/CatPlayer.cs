@@ -54,7 +54,6 @@ public class CatPlayer : MonoBehaviour
     // ------------------------------------------------------------------------
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("collided with " + collision.gameObject.tag);
         if (collision.gameObject.tag.Equals("ground"))
         {
             _isGrounded = true;
