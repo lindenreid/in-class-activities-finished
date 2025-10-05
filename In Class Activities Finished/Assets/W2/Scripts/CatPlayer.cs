@@ -10,7 +10,6 @@ public class CatPlayer : MonoBehaviour
     [SerializeField] private float _speed;
     // The velocity of the player's jump
     [SerializeField] private float _jump;
-    [SerializeField] private float _kick;
 
     private bool _facingLeft;
     private bool _isGrounded;

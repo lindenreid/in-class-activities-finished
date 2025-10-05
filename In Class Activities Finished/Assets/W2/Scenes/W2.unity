@@ -587,9 +587,8 @@ MonoBehaviour:
   _rigidbody: {fileID: 1731133144}
   _animator: {fileID: 1731133140}
   _spriteRenderer: {fileID: 1731133141}
-  _speed: 0
-  _jump: 0
-  _kick: 0
+  _speed: 5
+  _jump: 5
 --- !u!1 &2142623056
 GameObject:
   m_ObjectHideFlags: 0
