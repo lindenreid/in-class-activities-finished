@@ -83,6 +83,8 @@ public class Ball : MonoBehaviour
         Color newColor = new Color(r, g, b);
         _spriteRenderer.color = newColor;
 
+        // This line prints the value of your new color to the Console window.
+        // We'll talk more about how this line works next week also :)
         Debug.Log(newColor);
     }
 }
