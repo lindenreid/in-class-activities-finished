@@ -12,7 +12,7 @@ public class CatPlayer : MonoBehaviour
     [SerializeField] private float _jump;
 
     private bool _facingLeft;
-    private bool _isGrounded;
+    private bool _isGrounded = true;
 
     // ------------------------------------------------------------------------
     // Update is called every frame
@@ -54,6 +54,10 @@ public class CatPlayer : MonoBehaviour
     // ------------------------------------------------------------------------
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        _isGrounded = true;
+        Debug.Log("collided with " + collision.gameObject.tag);
+        if (collision.gameObject.tag.Equals("ground"))
+        {
+            _isGrounded = true;
+        }
     }
 }
