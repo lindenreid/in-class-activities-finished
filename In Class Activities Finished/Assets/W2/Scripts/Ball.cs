@@ -5,6 +5,7 @@ using TMPro;
 public class Ball : MonoBehaviour
 {
     [SerializeField] private TMP_Text _bouncesText;
+    [SerializeField] private TMP_Text _brightnessText;
     [SerializeField] private SpriteRenderer _spriteRenderer;
     [SerializeField] private Rigidbody2D _rigidbody;
 
@@ -86,5 +87,16 @@ public class Ball : MonoBehaviour
         // This line prints the value of your new color to the Console window.
         // We'll talk more about how this line works next week also :)
         Debug.Log(newColor);
+
+        // A simple way to calculate how bright a color will be is by
+        //      averaging the R, G, B values.
+        // Below this comment, write 2 lines of code to ADD the values of 
+        //      r, g, and b, and then divide the result by 3.
+        // Store the result in a variable named 'brightness'.
+        float brightness = r + g + b;
+        brightness = brightness / 3.0f;
+
+        // Uncomment the below line to make the 'brightness' text change in your game.
+        _brightnessText.text = "brightness = " + brightness;
     }
 }
