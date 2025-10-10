@@ -1,7 +1,15 @@
 # in-class-activities-finished
 ## Devlogs
 ### W1
-Pretend I wrote a beautiful metaphor describing Components, GameObjects, and Scenes here.
+When I moved the Camera GameObject off of the Cat GameObject, the camera stopped moving with the cat. This is because the Camera was moving with the cat because of the parent-child relationship, where the cat parent GameObject was carrying the camera child GameObject.
+
+### W2
+1. The R, G, and B variables represent values from 0.0 - 1.0. Because the values after the decimal are important, we need to store these values in floats instead of integers.
+2. The _bounce variable is a count of the number of times the ball has bounced, which makes the most sense as a whole number integer value.
+3. The error said "Assets/W2/Scripts/Ball.cs(68,18): error CS1002: ; expected" - it's warning me that the statement is missing a semicolon at the end.
+
+### W3
+Start writing your W3 Devlog here.
 
 ## Open-Source Assets
 ### W1
