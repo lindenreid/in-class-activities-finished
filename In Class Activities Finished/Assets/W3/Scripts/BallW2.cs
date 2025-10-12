@@ -22,7 +22,7 @@ public class BallW2 : MonoBehaviour
         // STEP X -------------------------------------------------------------
     }
 
-    // STEP X -------------------------------------------------------------
+    // STEP X -----------------------------------------------------------------
     private float GetColorMultiplier(float speedx, float speedy)
     {
         float speed = (speedx + speedy) / 2.0f;
@@ -32,5 +32,5 @@ public class BallW2 : MonoBehaviour
         }
         return 1.0f;
     }
-    // STEP X -------------------------------------------------------------
+    // STEP X ------------------------------------------------------------------
 }

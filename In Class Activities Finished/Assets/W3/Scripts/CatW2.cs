@@ -11,12 +11,14 @@ public class CatW2 : MonoBehaviour
     // The velocity of the player's jump
     [SerializeField] private float _jump;
     [SerializeField] private TMP_Text _healthText;
+    [SerializeField] private TMP_Text _pointsText;
     [SerializeField] private TMP_Text _speechText;
     [SerializeField] private float _health = 5;
     [SerializeField] private bool _destroyCatWhenDead;
 
     private bool _facingLeft;
     private bool _isGrounded = true;
+    private int _points = 0;
 
     // ------------------------------------------------------------------------
     // Update is called every frame
@@ -63,7 +65,7 @@ public class CatW2 : MonoBehaviour
         {
             _isGrounded = true;
         }
-
+        
         BallW2 ball = collision.gameObject.GetComponent<BallW2>();
         if (ball != null)
         {
@@ -71,12 +73,26 @@ public class CatW2 : MonoBehaviour
 
             // STEP X ---------------------------------------------------------
             DecreaseHealth();
+            Debug.Log("health: " + _health);
 
             if (_health <= 0 && _destroyCatWhenDead)
             {
                 DestroyCat();
             }
             // STEP X -------------------------------------------------------------
+        }
+    }
+
+    // ------------------------------------------------------------------------
+    // This method is called by Unity whenever the cat hits something
+    //      whose collider's "Is Trigger" option is checked.
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag.Equals("Item"))
+        {
+            _points++;
+            _pointsText.text = "points: " + _points;
+            Destroy(other.gameObject);
         }
     }
 
