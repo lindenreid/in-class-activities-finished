@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 830b89181cbc2ff4a9c72aea5a25a428
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 310051
+  packageName: Football Essentials 3D
+  packageVersion: 1.0
+  assetPath: Assets/Shared 3D/Football Essentials 3D/Material/ColorsEmm.mat
+  uploadId: 735705

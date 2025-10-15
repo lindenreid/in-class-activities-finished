@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 05fc2ffe1f3ea8f4b9561670d731f4ac
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 13400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 310051
+  packageName: Football Essentials 3D
+  packageVersion: 1.0
+  assetPath: Assets/Shared 3D/Football Essentials 3D/Physics Materials/Ball.physicMaterial
+  uploadId: 735705
