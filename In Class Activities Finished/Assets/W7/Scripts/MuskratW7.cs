@@ -78,10 +78,10 @@ public class MuskratW7 : MonoBehaviour
 
 
         // STEP 4 -------------------------------------------------------------
-        bool flying = Mathf.Abs(_rigidbody.linearVelocity.y) >= 0.2f;
+        bool flying = Mathf.Abs(_rigidbody.velocity.y) >= 0.2f;
         _animator.SetBool("flying", flying);
 
-        bool running = _rigidbody.linearVelocity.x != 0.0f;
+        bool running = _rigidbody.velocity.x != 0.0f;
         _animator.SetBool("running", running);
         // STEP 4 -------------------------------------------------------------
     }

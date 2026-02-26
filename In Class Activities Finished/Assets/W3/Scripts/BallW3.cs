@@ -14,24 +14,24 @@ public class BallW3 : MonoBehaviour
     {
         // STEP 1 -------------------------------------------------------------
         // We can access the member variables of another class using the '.' symbol.
-        // For example, we can use the variabled named 'linearVelocity' on
-        //      our _rigidbody object by typing '_rigidbody.linearVelocity'.
+        // For example, we can use the variabled named 'velocity' on
+        //      our _rigidbody object by typing '_rigidbody.velocity'.
         //
-        // Uncomment and fix this line to multiply the _rigidbody.linearVelocity
+        // Uncomment and fix this line to multiply the _rigidbody.velocity
         //      times the _speedMultiplier variable. 
         //
         // This will make the ball go faster (or slower!) depending on the value
         //      of _speedMultiplier. TUNE that value in the Inspector and see
         //      what happens!
 
-        _rigidbody.linearVelocity *= _speedMultiplier;
+        _rigidbody.velocity *= _speedMultiplier;
 
         // STEP 1 -------------------------------------------------------------
 
         // STEP 9 -------------------------------------------------------------
         // After you write the GetColorMultiplier method, simply uncomment
         //      the below line.
-        ballRenderer.color *= GetColorMultiplier(Mathf.Abs(_rigidbody.linearVelocity.x), Mathf.Abs(_rigidbody.linearVelocity.y));
+        ballRenderer.color *= GetColorMultiplier(Mathf.Abs(_rigidbody.velocity.x), Mathf.Abs(_rigidbody.velocity.y));
         // STEP 9 -------------------------------------------------------------
     }
 

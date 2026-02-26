@@ -27,7 +27,7 @@ public class CatW4 : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && _isGrounded)
         {
-            _rigidBody.linearVelocity = new Vector3(_rigidBody.linearVelocity.x, 0f, _rigidBody.linearVelocity.z);
+            _rigidBody.velocity = new Vector3(_rigidBody.velocity.x, 0f, _rigidBody.velocity.z);
             _rigidBody.AddForce(Vector3.up * _jumpForce, ForceMode.Impulse);
             _isGrounded = false;
         }

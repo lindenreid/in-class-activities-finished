@@ -15,9 +15,9 @@ public class CatW6 : MonoBehaviour
     private void Update()
     {
         // Detect input to move player left/right
-        _rigidbody.linearVelocity = new Vector2(
+        _rigidbody.velocity = new Vector2(
             Input.GetAxis("Horizontal") * _speed,
-            _rigidbody.linearVelocity.y
+            _rigidbody.velocity.y
         );
 
         // Detect input to jump
@@ -25,8 +25,8 @@ public class CatW6 : MonoBehaviour
         {
             _isGrounded = false;
 
-            _rigidbody.linearVelocity = new Vector2(
-                _rigidbody.linearVelocity.x,
+            _rigidbody.velocity = new Vector2(
+                _rigidbody.velocity.x,
                 _jump
             );
         }
@@ -44,7 +44,7 @@ public class CatW6 : MonoBehaviour
         }
 
         // Set animation state parameters
-        _animator.SetBool("walking", _rigidbody.linearVelocity.x != 0.0f);
+        _animator.SetBool("walking", _rigidbody.velocity.x != 0.0f);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
